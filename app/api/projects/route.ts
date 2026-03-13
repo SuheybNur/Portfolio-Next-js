@@ -14,6 +14,8 @@ let projects: Project[] = [
     title: "Weather Dashboard",
     description: "Real-time weather app using OpenWeather API",
     techStack: ["React", "Tailwind", "OpenWeather API"],
+    liveUrl: "https://mystore.vercel.app",
+    githubUrl: "https://github.com/user/store",
     featured: false,
   },
 ];
