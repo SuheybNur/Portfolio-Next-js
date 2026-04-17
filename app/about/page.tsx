@@ -1,6 +1,5 @@
 "use client"
 import Navigation from '../Navigation'
-import Image from "next/image";
 import { Footer } from "../footer";
 
 export default function About() {

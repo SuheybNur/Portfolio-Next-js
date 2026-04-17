@@ -1,5 +1,4 @@
 import Navigation from '../Navigation'
-import Link from 'next/link'
 import { Footer } from "../footer";
 async function getProjects() {
   const response = await fetch('http://localhost:3000/api/projects')

@@ -1,5 +1,4 @@
 import Navigation from './Navigation'
-import Link from 'next/link'
 import Image from "next/image";
 import { Footer } from './footer'
 
