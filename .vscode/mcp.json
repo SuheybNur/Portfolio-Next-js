@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "killer-bug-portfolio-nextjs": {
+      "type": "http",
+      "url": "http://localhost:3100/mcp",
+      "env": {
+        "MCP_PORT": "3100"
+      }
+    }
+  }
+}
