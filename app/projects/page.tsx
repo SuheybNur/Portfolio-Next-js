@@ -1,10 +1,13 @@
 import Navigation from '../Navigation'
 import Image from 'next/image'
 import { Footer } from "../footer";
+export const dynamic = 'force-dynamic'
+
 async function getProjects() {
-  const response = await fetch('http://localhost:3000/api/projects')
-  const projects = await response.json()
-  return projects
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+  const response = await fetch(`${base}/api/projects`, { cache: 'no-store' })
+  if (!response.ok) return []
+  return response.json()
 }
 
 async function Home() {
