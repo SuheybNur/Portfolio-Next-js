@@ -27,7 +27,7 @@ export default function Contact() {
               </div>
             </div>
             
-            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">I'm open to discussing new opportunities and/or projects.</p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">I&apos;m open to discussing new opportunities and/or projects.</p>
           </div>
         </div>
       </div>

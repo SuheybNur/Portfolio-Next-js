@@ -1,5 +1,5 @@
 import { Project } from "@/types/portfolio";
-let projects: Project[] = [
+const projects: Project[] = [
   {
     id: 1,
     title: "E-Commerce Store",

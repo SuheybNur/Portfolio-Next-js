@@ -1,4 +1,5 @@
 import Navigation from '../Navigation'
+import Image from 'next/image'
 import { Footer } from "../footer";
 async function getProjects() {
   const response = await fetch('http://localhost:3000/api/projects')
@@ -15,11 +16,11 @@ async function Home() {
       <div className='flex justify-between items-start mb-11.5'>
   
       </div>
-      <img src="/img/logo.svg" className="mb-11.5 h-6 dark:hidden" alt="Tailwind Play" />
+      <Image src="/img/logo.svg" className="mb-11.5 h-6 dark:hidden" alt="Tailwind Play" />
       <div className="space-y-6">
         <p>Placeholder text goes here</p>
         <ul className="space-y-3">
-        {projects.map((project: any) => (
+        {projects.map((project: { id: number; title: string; description: string; techStack: string[]; liveUrl: string; githubUrl: string }) => (
             <li className="flex" key={project.id}>
               <svg className="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none" strokeLinecap="square">
                   <circle cx="11" cy="11" r="11" className="fill-sky-400/25" />
