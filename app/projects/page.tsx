@@ -19,7 +19,13 @@ async function Home() {
       <div className='flex justify-between items-start mb-11.5'>
   
       </div>
-      <Image src="/img/logo.svg" className="mb-11.5 h-6 dark:hidden" alt="Tailwind Play" />
+<Image
+          src="/img/logo.svg"
+          alt="placeholder image"
+          width={240}
+          height={240}
+          className="mb-11.5 h-6 dark:hidden"
+        />
       <div className="space-y-6">
         <p>Placeholder text goes here</p>
         <ul className="space-y-3">
